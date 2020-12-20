@@ -1,3 +1,4 @@
+# Note: """ is used for comment that particular function so if u want to use  variety of function u can use..by removing """
 import json
 import numpy as np
 import pandas as pd
@@ -12,8 +13,7 @@ df = pd.read_csv("covid19.csv")
 df["id"] = df["state_ut"].apply(lambda x: state_id_map[x])
 
 
-
-"""fig = px.choropleth(
+fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -28,8 +28,10 @@ df["id"] = df["state_ut"].apply(lambda x: state_id_map[x])
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
 fig.show()
+
+                                                 #OR
  
-fig = px.choropleth(
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -43,9 +45,12 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
+fig.show()"""
 
-fig = px.choropleth(
+                                                      #OR
+    
+
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -59,9 +64,13 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
-
-fig = px.choropleth(
+fig.show()"""
+ 
+    
+                                        #OR
+    
+    
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -75,14 +84,14 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
+fig.show()"""
 
 
 
 
-#MAPBOX
+#USING MAPBOX FOR Customization
 
-fig = px.choropleth_mapbox(
+"""fig = px.choropleth_mapbox(
     df,
     locations="id",
     geojson=india_states,
