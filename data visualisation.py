@@ -13,7 +13,7 @@ df["id"] = df["state_ut"].apply(lambda x: state_id_map[x])
 
 
 
-"""fig = px.choropleth(
+fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -29,7 +29,7 @@ fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
 fig.show()
  
-fig = px.choropleth(
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -43,9 +43,9 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
+fig.show()"""
 
-fig = px.choropleth(
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -59,9 +59,9 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
+fig.show()"""
 
-fig = px.choropleth(
+"""fig = px.choropleth(
     df,
     locations="id",
     geojson=india_states,
@@ -75,14 +75,14 @@ fig = px.choropleth(
 )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig.update_geos(fitbounds="locations", visible=False)
-fig.show()
+fig.show()"""
 
 
 
 
 #MAPBOX
 
-fig = px.choropleth_mapbox(
+"""fig = px.choropleth_mapbox(
     df,
     locations="id",
     geojson=india_states,
